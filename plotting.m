@@ -1,7 +1,7 @@
 %data taken at 100Hz
 
 clc;close;clear;
-cd('/Volumes/THESIS/Santa Rosalia July 2014 restraining large squid/squid2')
+% cd('/Volumes/THESIS/Santa Rosalia July 2014 restraining large squid/squid2')
 filenames = dir('0730*M.mat');
 F = length(filenames);
 N = 6; %number of subplots in a figure

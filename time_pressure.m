@@ -1,8 +1,8 @@
 % Diana Li
 % loading time and voltage data into separate .mat files
-clear all; clear history; close all;clc;
-% cd('C:\Users\GILLY\Documents\MATLAB\Project\Loligo Neck Organ\')
-cd('/Volumes/THESIS/Santa Rosalia July 2014 restraining large squid/squid2')
+clear all; clear history; close all; clc;
+cd('C:\Users\GILLY\Documents\Do_Phys_response_Aug_2014\08_27_14') %location of data
+% cd('/Volumes/THESIS/Santa Rosalia July 2014 restraining large squid/squid2')
 
 % to fetch selected file
 Filename = uigetfile('*.txt');
@@ -10,6 +10,8 @@ Filename = uigetfile('*.txt');
 % to read the first line
 currentline = fgetl(fid);
 
+% change cd to location of functions
+cd ('C:\Users\GILLY\Desktop\Diana Li\D.opalescens_temp_hypoxia')
 % while there are characters to read
 while ~feof(fid)
 
