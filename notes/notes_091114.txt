@@ -1,0 +1,132 @@
+9/11/14 escape responses
+
+squid 1
+ML = 8.1 cm
+Sex = Female, definitely. many visible eggs in ovary; clear eggs. maybe 4/5?
+
+* = escape response
+m = multiple jets occured
+s = strangely small escape jet
+incoming water temp seems to be around 15.4degC today (yesterday 9/10/14 around 16 degC)
+normoxia
+
+5 min at each temperature, 1 min between replicates at temperature
+
+14.5 degC
+01.31.23*
+01.31.40*
+
+waiting for chiller to bring back down to 14degC
+for videos, look for squid1_14deg_redo_startAt01.32.47 (which was a dumb name but whatever)
+
+14degC redo
+01.44.15* m
+01.44.28* m
+01.45.40*
+01.46.49* m
+01.48.08* m
+
+15 degC
+02.02.20 broke. redo
+02.02.43*
+02.05.01 s
+02.05.58*
+02.07.05*
+
+2 redos at 15 degC
+02.09.01*
+02.09.13*
+
+16 degC
+
+02.38.29*
+02.38.50* s
+02.40.17* s
+02.41.40* s
+02.43.50* s
+
+17 degC
+03.16.10
+
+reglued squid since only the mantle by the fins was still attached
+
+17 degC redo
+03.31.37
+03.34.11
+03.35.22
+03.36.56 fin response that seems timed as if it's a reflex in lieu of escape jet
+03.38.12
+
+18 degC
+04.03.10
+04.04.38
+04.06.01* s (?!)
+04.07.14
+04.08.34
+
+19 degC
+
+04.43.19
+04.43.46
+04.44.54
+04.45.58
+04.47.13
+
+20 degC
+
+05.24.24
+05.26.05
+05.27.17 arms and fin reflex?
+05.28.33 arms and fin again?
+05.29.48
+
+19 degC
+05.40.22
+05.40.38 arms?
+05.41.58 arms? head-jerk?
+05.43.13
+05.44.50
+
+18 degC
+05.55.12
+05.55.32
+05.57.02 arms?
+05.58.17 arms?
+05.59.22 arms!
+
+17 degC
+06.10.35
+06.10.48
+06.12.06 arms?
+06.13.19
+06.14.37
+
+16 degC - squid looks more active than when the temp was higher
+06.29.47 *small, but it returns??
+06.30.08
+06.31.33
+06.36.35
+06.37.52
+
+15 degC
+07.03.41*omg it's back?? (small escape jet though)
+07.03.55 flinch only, no jet....
+07.05.11*s
+07.06.33*s
+07.07.46 another flinch only
+
+14 degC - squid more active, more fin flapping, arms not hanging down as much
+07.20.57*
+07.21.12 flinch
+07.22.42*
+07.23.50*
+07.26.30*
+
+
+the squid just laid an egg capsule when i was removing her from the tank after i finished things. hopefully that doesn't affect things...?
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+09/12/14
+
+squid1
+ML = 9.2 cm
+Sex = Male, 5
+
+water coming in around 15 degC today
+
+20 -> 14 -> 20
+normoxia
+
+5 min at each temp to get used to, including the beginning 20 degC
+1 min between replicates
+s = smaller escape response than expected
+
+20degC
+12.33.37
+12.34.06
+12.35.33
+12.36.49
+12.38.01
+
+19 degC
+12.47.34
+12.47.48
+12.49.11 fin flinch?
+12.50.22 
+12.51.45
+
+18 degC
+01.00.39
+01.01.08
+01.02.30
+01.03.46
+01.05.08
+
+17 degC
+01.15.17
+01.15.44
+01.17.16
+01.18.41
+01.19.57 maybe arms?
+
+16 degC
+01.33.01* whaaaat this is so cool
+01.33.29 ok well fine, don't escape respond this time
+01.34.35 (file not in labview but is in folder; could be reimported?)
+01.35.58* (file not in labview but is in folder; could be reimported?)
+
+01.39.06
+01.39.30 slight flinch?
+01.41.05 slight flinch?
+01.42.18
+01.44.09
+
+15 degC
+02.00.38*
+02.01.01
+02.02.22
+02.04.43
+02.06.39
+
+14 degC
+02.21.27* s
+02.21.51* s
+02.23.12* s
+02.24.34* s
+02.25.55
+
+15 degC
+
+02.52.53 flinch
+02.53.09 head/arms flinch
+02.54.22
+02.55.36
+02.57.01
+
+16 degC
+03.31.54
+03.32.28 flinch?
+03.34.05
+03.34.38 maybe arm flinch?
+03.35.44 flinch?
+
+17 degC
+04.13.03
+04.13.26 flinch?
+04.14.52
+04.16.17 arms flinch?
+04.17.26 possible fin flinch?
+
+18 degC
+04.56.33 slight flinch?
+04.57.18
+04.58.31 possible arm flinch?
+04.59.41 flinch
+05.01.01 arms flinch
+
+19 degC
+05.34.45
+05.35.53 arms maybe
+05.37.02
+05.38.09
+05.39.15
+
+20 degC
+06.13.59
+06.14.31
+06.15.43
+06.16.54
+06.18.07
+
+
+
+
+
+
+
+
+
+
+
