@@ -5,9 +5,8 @@ clear all;
 % cd('E:\8_13_12 Loligo Neck Organ MATLAB')
 % cd('/Volumes/THESIS/8_13_12 Loligo Neck Organ MATLAB/all runs/08_02_12_squid5_temp3')
 
-expmt_date = '091214';
-% cd to place where .mat files are
-cd(strcat('/Users/dhli/Documents/Graduate Research/D.opalescens_temp_hypoxia/',expmt_date))
+%cd to place where .mat files are
+cd('/Users/dhli/Documents/Graduate Research/D.opalescens_temp_hypoxia/082814')
 
 filenames = dir('*M.mat'); % change this search accordingly too!
 
@@ -17,7 +16,7 @@ load(uigetfile('*Log.mat'));
 
 %cd back to place where the expmt .mat files are since we're saving them
 %there
-cd(strcat('/Users/dhli/Documents/Graduate Research/D.opalescens_temp_hypoxia/',expmt_date))
+cd('/Users/dhli/Documents/Graduate Research/D.opalescens_temp_hypoxia/082814')
 
 DoTime = datevec(DoTempMatrix(:,3));
 
