@@ -2,10 +2,11 @@ clear;
 clc;
 % cd('E:\8_13_12 Loligo Neck Organ MATLAB')
 % cd('/Volumes/THESIS/Temp_DO fall break/Labeled/useful')
-cd('C:\Users\GILLY\Desktop\Diana Li\D.opalescens_temp_hypoxia\Temp_DO_measurements')
+% cd('C:\Users\GILLY\Desktop\Diana Li\D.opalescens_temp_hypoxia\Temp_DO_measurements')
+cd ('/Volumes/DIANA LI/Temp_DO_data')
 
 % get specified file
-Filename = uigetfile('TempDO_*');
+Filename = uigetfile('TempDO*.txt');
 % open file for reading
 fid = fopen(Filename);
 % initialize cell array to hold data
