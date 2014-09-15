@@ -1,31 +1,90 @@
-%data taken at 100Hz
-
 clc;close;clear;
-% cd('/Volumes/THESIS/Santa Rosalia July 2014 restraining large squid/squid2')
-cd ('/Users/dhli/Documents/Graduate Research/D.opalescens_temp_hypoxia')
+expmt_date = '091214';
+date = '09122014';
+% cd to place where .mat files are
+cd(strcat('/Users/dhli/Documents/Graduate Research/D.opalescens_temp_hypoxia/',expmt_date))
 
-filenames = dir('0827*M.mat');
-F = length(filenames);
-N = 6; %number of subplots in a figure
-i = 1;
+%until i freaking rename the files to 24h time, this is for AM
+filenamesAM = dir([date '_1*M.mat']);
+FAM = length(filenamesAM);
+N = 9; %number of subplots in a figure
+rows = 3;
+columns = 3;
+count = 1;
 s = 1;
-squid_num = 2;
+
+load(filenamesAM(1).name)
+%when sorting files, it sorts to whatever is in the first column
+for j = 1:length(filenamesAM)
+    
+    load(filenamesAM(j).name);
+    toSortAM{j,1} = filenamesAM(j).name;
+    toSortAM{j,2} = ptemp;
+    toSortAM{j,3} = pDO;
+end
+sortedAM = sortrows(toSortAM);
+
+
+%here are the files for PM
+filenamesPM = dir([date '_0*M.mat']);
+FPM = length(filenamesPM);
+
+
+load(filenamesPM(1).name)
+%when sorting files, it sorts to whatever is in the first column
+for j = 1:length(filenamesPM)
+    
+    load(filenamesPM(j).name);
+    toSortPM{j,1} = filenamesPM(j).name;
+    toSortPM{j,2} = ptemp;
+    toSortPM{j,3} = pDO;
+    %     toSort{j,1} = sum(ptime(1:5)); toSort{j,2} = ptime;
+end
+sortedPM = sortrows(toSortPM);
+
+%and NOW join the two sorted cells into a single one. no one will notice...
+sorted = [sortedAM;sortedPM];
+filenames = [filenamesAM;filenamesPM];
+F = FAM + FPM;
+
 for f = 1:ceil(F/N)
     figure(f)
-    for s = 1:6
-        load(filenames(i).name)
-        pressuredata(:,1) = (pressuredata(:,1) - pressuredata(1,1)) .* 1e5;
-        h = subplot(2,3,s);
-        plot(pressuredata(:,1),pressuredata(:,2))
-        title(filenames(i).name(1:17),'Interpreter','none')
-        xlabel('Time (s)')
-        ylabel('Voltage (V)')
-        axis([0 max(pressuredata(:,1)) -1.1 -0.1])
-        i = i+1;
-        savename1 = ['squid' num2str(squid_num) '_subplot' num2str(f) '.png'];
-        savename2 = ['squid' num2str(squid_num) '_subplot' num2str(f) '.fig'];
-        saveas(h,savename1)
-        saveas(h,savename2)
-    end
     
+        
+        for j = 1:length(filenames)
+            % fetches each specified .mat file in the cell array sortedTemp each iteration
+            load(sorted{j,1});
+            filenames(count).name
+            for i = 2:length(pressuredata)
+                pchange = pressuredata(i,3) - pressuredata(i-1,3);
+                if pchange > 1.5
+                    x = pressuredata(i-1,1);
+                    break
+                end
+            end
+            stim_N = 15;
+            for n = 1:stim_N
+                stimline(n) = x;
+            end
+            
+            
+            
+            %             pressuredata(:,1) = (pressuredata(:,1) - pressuredata(1,1)) .* 1e5;
+            h = subplot(rows,columns,s);
+            plot(pressuredata(:,1),pressuredata(:,2))
+            hold on
+            plot(stimline,0:stim_N-1,'r')
+            title([filenames(count).name(1:17) ' at ' num2str(ptemp) ' deg C'],'Interpreter','none')
+            xlabel('Time (s)')
+            ylabel('Voltage (V)')
+            axis([min(pressuredata(:,1)) max(pressuredata(:,1)) .3 .8])
+            count = count+1;
+            
+        end
+        
+    
+    savename1 = [expmt_date '_subplot' num2str(f) '.png'];
+    savename2 = [expmt_date '_subplot' num2str(f) '.fig'];
+    saveas(h,savename1)
+    saveas(h,savename2)
 end

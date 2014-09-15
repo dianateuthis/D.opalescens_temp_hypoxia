@@ -47,6 +47,7 @@ for videos, look for squid1_14deg_redo_startAt01.32.47 (which was a dumb name bu
 
 17 degC
 03.16.10
+03.16.50
 
 reglued squid since only the mantle by the fins was still attached
 
