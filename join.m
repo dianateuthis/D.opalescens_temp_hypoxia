@@ -1,10 +1,8 @@
 clc;
 clear all;
 
-% change current directory accordingly! 
-% cd('E:\8_13_12 Loligo Neck Organ MATLAB')
-% cd('/Volumes/THESIS/8_13_12 Loligo Neck Organ MATLAB/all runs/08_02_12_squid5_temp3')
-
+%change this experiment date string accordingly b/c it specifies the
+%directory
 expmt_date = '091214';
 % cd to place where .mat files are
 cd(strcat('/Users/dhli/Documents/Graduate Research/D.opalescens_temp_hypoxia/',expmt_date))
@@ -25,7 +23,7 @@ for i = 1:length(filenames)
     load(filenames(i).name)
     
     ptime = datevec(pressuredata(1,1));
-%     i
+    matlabTime = pressuredata(1,1);
     num2str(pressuredata(1,1));
     
     for j = 1:length(DoTime)
@@ -33,7 +31,7 @@ for i = 1:length(filenames)
         if ptime(1:5) == DoTime(j,1:5)
             ptemp = DoTempMatrix(j,2);
             pDO = DoTempMatrix(j,1);
-            save(filenames(i).name,'ptemp','pDO','pressuredata','ptime','-mat');
+            save(filenames(i).name,'ptemp','pDO','pressuredata','ptime','matlabTime','-mat');
         
             break
         end
